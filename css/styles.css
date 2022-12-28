@@ -1,6 +1,11 @@
 :root {
   --text-main: #434455;
   --primary-text-color: #2e2f42;
+  --button-color: #4d5ae5;
+  --hover-color: #404bbf;
+  --bcgnd-fltr-clr: #f4f4fd;
+  --text-footer-clr: #e7e9fc;
+  --font-hero-clr: #ffffff;
 }
 
 .nolist {
@@ -12,6 +17,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
 }
 /*===========COMPONENTS===========*/
 
@@ -36,86 +43,9 @@ body {
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
+
 span {
-  color: #4d5ae5;
-}
-
-.menu-nav {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.menu-studio,
-.menu-prt,
-.menu-cnts {
-  color: var(--primary-text-color);
-}
-
-.menu-adress {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--text-main);
-}
-
-.menu-email,
-.menu-tel {
-  color: var(--text-main);
-}
-
-.main-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-}
-
-.service-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #4d5ae5;
-}
-
-.hero {
-  /* position: absolute;
-  width: 1440px;
-  height: 600px;
-  left: 0px;
-  top: 72px;*/
-  background: var(--primary-text-color);
-}
-/*======OUR FEATURES=============*/
-
-.features-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-}
-
-.features-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--text-main);
+  color: var(--button-color);
 }
 
 .visually-hidden {
@@ -131,51 +61,159 @@ span {
   margin: -1px;
 }
 
+/*===========/COMPONENTS/===========*/
+
+/*===========HEADER===========*/
+
+.menu-nav {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.menu-studio:hover,
+.menu-studio:focus,
+.menu-prt:hover,
+.menu-prt:focus,
+.menu-cnts:hover,
+.menu-cnts:focus,
+.menu-email:hover,
+.menu-email:focus,
+.menu-tel:hover,
+.menu-tel:focus {
+  color: var(--hover-color);
+}
+
+.menu-studio,
+.menu-prt,
+.menu-cnts {
+  color: var(--primary-text-color);
+}
+
+.menu-adress {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--text-main);
+}
+
+.menu-email,
+.menu-tel {
+  color: var(--text-main);
+}
+/*===========/HEADER/===========*/
+
+/*============HERO===============*/
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--font-hero-clr);
+}
+
+.service-btn {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: inherit;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  border: none;
+  color: var(--font-hero-clr);
+  background: var(--button-color);
+  cursor: pointer;
+}
+
+.hero {
+  background: var(--primary-text-color);
+}
+/*============/HERO/===============*/
+
+/*========OUR FEATURES=============*/
+
+.features-name {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.features-text {
+  letter-spacing: 0.02em;
+  color: var(--text-main);
+}
+/*======/OUR FEATURES/=============*/
+
 /*======WHAT ARE WE DOING=============*/
 /*======OUR TEAM=============*/
 .team {
-  /*position: absolute;
-width: 1440px;
-height: 732px;
-left: 0px;
-top: 1548px;*/
-  background: #f4f4fd;
+  background: var(--bcgnd-fltr-clr);
 }
 
 .team-list {
-  background: #ffffff;
+  background: var(--font-hero-clr);
 }
 
 .team-name {
-  font-weight: 500;
   font-size: 20px;
   line-height: 1.2px;
-  /*text-align: center;*/
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
 .team-position {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  /*text-align: center;*/
   letter-spacing: 0.02em;
   color: var(--text-main);
 }
+/*======/OUR TEAM/=============*/
 /*======FOOTER=============*/
 footer {
-  background: #2e2f42;
+  background: var(--primary-text-color);
 }
 
 .logo-footer {
-  color: #f4f4fd;
+  color: var(--bcgnd-fltr-clr);
 }
 
 .text-footer {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #e7e9fc;
+  color: var(--text-footer-clr);
 }
+/*======/FOOTER/=============*/
+/*======PORTOFOLIO=============*/
+.filter-btn {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: inherit;
+  letter-spacing: 0.04em;
+  border: none;
+  color: var(--button-color);
+  background: var(--bcgnd-fltr-clr);
+  cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--font-hero-clr);
+  background: var(--hover-color);
+}
+
+.title-ptf {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.name-fltr-ptf {
+  letter-spacing: 0.02em;
+  color: var(--text-main);
+}
+
+/*======/PORTOFOLIO/=============*/
