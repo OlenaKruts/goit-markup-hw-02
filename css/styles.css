@@ -49,7 +49,7 @@ body {
   color: var(--primary-text-color);
 }
 
-span {
+.accent {
   color: var(--button-color);
 }
 
@@ -132,6 +132,10 @@ span {
   background: var(--button-color);
 
   cursor: pointer;
+}
+.service-btn:hover,
+.service-btn:focus {
+  background: var(--hover-color);
 }
 
 .hero {
