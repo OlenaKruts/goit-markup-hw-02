@@ -17,12 +17,13 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 
   color: var(--text-main);
-  background-color: #ffffff;
+  background-color: var(--font-hero-clr);
 }
 /*===========COMPONENTS===========*/
 
@@ -72,8 +73,7 @@ body {
 
 .menu-nav {
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 500;
 
   cursor: pointer;
 }
@@ -99,8 +99,6 @@ body {
 
 .menu-adress {
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
 }
 
 .menu-email,
@@ -120,8 +118,8 @@ body {
 
 .service-btn {
   font-family: inherit;
-  font-weight: inherit;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: inherit;
   line-height: inherit;
   display: flex;
   align-items: center;
@@ -148,6 +146,7 @@ body {
 .features-name {
   font-size: 20px;
   line-height: 1.2;
+  font-weight: 500;
 
   color: var(--primary-text-color);
 }
@@ -156,6 +155,7 @@ body {
 
 /*======WHAT ARE WE DOING=============*/
 /*======OUR TEAM=============*/
+
 .team {
   background: var(--bcgnd-fltr-clr);
 }
@@ -167,6 +167,7 @@ body {
 .team-name {
   font-size: 20px;
   line-height: 1.2;
+  font-weight: 500;
 
   color: var(--primary-text-color);
 }
@@ -188,7 +189,7 @@ footer {
 /*======PORTOFOLIO=============*/
 .filter-btn {
   font-family: inherit;
-  font-weight: inherit;
+  font-weight: 500;
   font-size: 16px;
   line-height: inherit;
   letter-spacing: 0.04em;
@@ -209,6 +210,7 @@ footer {
 .title-ptf {
   font-size: 20px;
   line-height: 1.2;
+  font-weight: 500;
 
   color: var(--primary-text-color);
 }
